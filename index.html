@@ -3,27 +3,34 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Greeting Widget</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 
 <style>
+
 body{
     margin:0;
-    padding:10px;
-    font-family:Segoe UI, Arial, sans-serif;
+    padding:0;
     background:transparent;
 }
 
 #greeting{
-    font-size:22px;
-    font-weight:600;
-    color:#1f2937;
+    font-family:'Caveat', cursive;
+    font-size:45px;
+    font-weight:700;
+    color:#FFFFFF;
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.15);
+    line-height:1.1;
 }
 
 #date{
-    margin-top:5px;
-    font-size:14px;
-    color:#6b7280;
+    font-family:Segoe UI, Arial, sans-serif;
+    font-size:16px;
+    color:rgba(255,255,255,0.85);
+    margin-top:6px;
 }
+
 </style>
 
 </head>
@@ -41,13 +48,13 @@ const hour = now.getHours();
 let greeting = "";
 
 if(hour < 12){
-    greeting = "☀️ Hey !!! Good Morning";
+    greeting = "Hey !!! Good Morning";
 }
 else if(hour < 17){
-    greeting = "🌤️ Hey !!! Good Afternoon";
+    greeting = "Hey !!! Good Afternoon";
 }
 else{
-    greeting = "🌙 Hey !!! Good Evening";
+    greeting = "Hey !!! Good Evening";
 }
 
 document.getElementById("greeting").innerHTML = greeting;
