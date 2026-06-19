@@ -1,3 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background:transparent;
+}
+
+/* Greeting */
+
+#greeting{
+    font-family:"Abadi MT Condensed Light", Arial, sans-serif;
+    font-size:45px;
+    font-weight:500;
+    color:#FFFFFF;
+    line-height:1.1;
+}
+
+/* Date */
+
+#date{
+    font-family:"Abadi MT Condensed Light", Arial, sans-serif;
+    font-size:25px;
+    color:rgba(255,255,255,0.85);
+    margin-top:4px;
+    margin-bottom:14px;
+}
+
+/* Portal Title */
+
+#portal-title{
+    font-family:"Abadi MT Condensed Light", Arial, sans-serif;
+    font-size:55px;
+    font-weight:600;
+    color:#FFFFFF;
+    line-height:1.15;
+    margin-top:12px;
+}
+
+</style>
+
+</head>
+
 <body>
 
 <div id="greeting"></div>
@@ -6,10 +55,6 @@
 
 <div id="portal-title">
 Welcome to our Geo-Spatial Information Portal
-<p style="font-family: Arial, sans-serif;">This is Arial text.</p>
-
-<p style="font-size: 50px;">This text is 16 pixels tall.</p>
-            
 </div>
 
 <script>
@@ -32,7 +77,6 @@ else{
 document.getElementById("greeting").innerHTML = greeting;
 
 const options = {
-    weekday: "long",
     day: "numeric",
     month: "long",
     year: "numeric"
@@ -44,3 +88,4 @@ document.getElementById("date").innerHTML =
 </script>
 
 </body>
+</html>
